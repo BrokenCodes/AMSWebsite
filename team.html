@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Team — AMS Global Himalaya Foundation</title>
+  <meta name="description" content="Meet the team behind AMS Global Himalaya Foundation.">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .team-section {
+      padding: var(--section-pad) 0;
+      background: var(--off-white);
+    }
+
+    .hierarchy-level {
+      margin-bottom: 80px;
+    }
+
+    .hierarchy-title {
+      text-align: center;
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      color: var(--blue);
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .team-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .team-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 30px;
+      text-align: center;
+      width: 300px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      transition: all 0.4s var(--ease);
+    }
+
+    .team-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .team-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      background: linear-gradient(135deg, var(--blue-light), var(--blue-pale));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border: 4px solid var(--white);
+      box-shadow: 0 8px 20px rgba(46, 139, 192, 0.15);
+    }
+
+    .team-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .photo-placeholder {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--blue);
+      opacity: 0.5;
+    }
+
+    .team-name {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--charcoal);
+      margin-bottom: 5px;
+    }
+
+    .team-role {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--blue);
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .team-desc {
+      font-size: 0.85rem;
+      color: var(--slate);
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="grain"></div>
+  <nav class="nav" id="nav">
+    <div class="container">
+      <div class="nav-logo"><img src="images/logo.png" alt="AMS Global Himalaya Foundation"><span
+          class="nav-logo-text">AMS Global Himalaya Foundation</span></div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Foundation</a></li>
+        <li><a href="event.html">Event</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="team.html" class="active">Team</a></li>
+        <li><a href="index.html#stats">Reach</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="hero" id="hero"
+    style="min-height: 40vh; display: flex; align-items: center; justify-content: center; text-align: center; position: relative; background: #0a0a0a; overflow: hidden;">
+    <div
+      style="position: absolute; inset: 0; background: url('images/hero-bg.png') no-repeat center center; background-size: cover; opacity: 0.4; z-index: 0;">
+    </div>
+    <div
+      style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(255,255,255,0) 100%); z-index: 1;">
+    </div>
+    <div class="hero-content" style="position: relative; z-index: 10; margin-top: 80px;">
+      <h1
+        style="font-family: var(--font-display); font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 900; color: var(--white);">
+        Our Leadership</h1>
+      <p class="tagline"
+        style="font-family: var(--font-display); font-size: 1.2rem; font-style: italic; color: rgba(255,255,255,0.9);">
+        "The visionaries guiding our global mission"</p>
+    </div>
+  </section>
+
+  <section class="team-section">
+    <div class="container">
+
+      <!-- Hierarchy 0 -->
+      <div class="hierarchy-level reveal">
+        <h2 class="hierarchy-title">Advisory Board</h2>
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-photo"><img src="Team/Surya%20Bahadur%20Kulung.jpeg" alt="Surya Bahadur Kulung">
+            </div>
+            <div class="team-name">Surya Bahadur Kulung</div>
+            <div class="team-role">Advisor</div>
+            <div class="team-desc">Chairperson, Mahakulung Rural Municipality</div>
+          </div>
+          <div class="team-card">
+            <div class="team-photo"><img src="Team/Ashim%20Rai.png" alt="Ashim Rai"></div>
+            <div class="team-name">Ashim Rai</div>
+            <div class="team-role">Advisor</div>
+            <div class="team-desc">Former Chairperson, Thulung Dudhkoshi Rural Municipality, Politician, Social Activist
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-photo"><img src="Team/Damodar%20Ghimire.png" alt="Damodar Ghimire"></div>
+            <div class="team-name">Damodar Ghimire</div>
+            <div class="team-role">Advisor</div>
+            <div class="team-desc">Chairman, Great Nepal Holidays Pvt. Ltd</div>
+          </div>
+          <div class="team-card">
+            <div class="team-photo"><img src="Team/Naresh Bhattarai.png" alt="Kamal Kumar Basnet"></div>
+
+            <div class="team-name">Naresh Bhattarai</div>
+            <div class="team-role">Advisor</div>
+            <div class="team-desc">Senior Media Personality</div>
+          </div>
+          <div class="team-card">
+            <div class="team-photo"><img src="Team/Kamal%20Kumar%20Basnet.png" alt="Kamal Kumar Basnet"></div>
+            <div class="team-name">Kamal Kumar Basnet</div>
+            <div class="team-role">Press Advisor</div>
+            <div class="team-desc">National News Agency</div>
+          </div>
+          <div class="team-card">
+            <div class="team-photo"><img src="Team/Gandhi%20Maya%20Tamang.jpeg" alt="Gandhi Maya Tamang"></div>
+            <div class="team-name">Gandhi Maya Tamang</div>
+            <div class="team-role">Advisor</div>
+            <div class="team-desc">Deputy Mayor, Solududhkunda Municipality</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider" style="margin-bottom: 80px;"></div>
+
+      <!-- Hierarchy 1 -->
+      <div class="hierarchy-level reveal">
+        <h2 class="hierarchy-title">Executive Leadership </h2>
+        <div class="team-grid">
+          <div class="team-card" style="width: 350px;">
+            <div class="team-photo" style="width: 180px; height: 180px;"><img
+                src="Team/Satyakala%20Tamang%20Lama.jpeg" alt="Satyakala Tamang Lama"></div>
+            <div class="team-name">Satyakala Tamang Lama</div>
+            <div class="team-role">Founder, Chairman</div>
+            <div class="team-desc">A.M.S Global Himalaya Foundation<br>National Player, Social Activist, Lyricist, World
+              Peace Committee Ambassador</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider" style="margin-bottom: 80px;"></div>
+
+      <!-- Hierarchy 2 -->
+      <div class="hierarchy-level reveal">
+        <h2 class="hierarchy-title">Directors & Chief Advisors</h2>
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-photo"><img src="Team/Phurba%20Gyalbo%20Moktan%20(thupten).jpeg"
+                alt="Phurba Gyalbo Moktan"></div>
+            <div class="team-name">Phurba Gyalbo Moktan</div>
+            <div class="team-role">Managing Director</div>
+            <div class="team-desc">Youth Politician, Social Activist, World Peace Committee Ambassador</div>
+          </div>
+          <div class="team-card">
+            <div class="team-photo"><img src="Team/Nanggyal%20Sherpa.jpeg" alt="Namgel Sherpa"></div>
+            <div class="team-name">Namgel Sherpa</div>
+            <div class="team-role">Chief Advisor</div>
+            <div class="team-desc">Youth Politician, Social Activist, World Peace Committee Ambassador</div>
+          </div>
+          <div class="team-card">
+            <div class="team-photo"><img src="Team/Mingma%20Dorjee%20Sherpa.jpeg" alt="Mingma Dorjee Sherpa">
+            </div>
+            <div class="team-name">Mingma Dorjee Sherpa</div>
+            <div class="team-role">Advisor</div>
+            <div class="team-desc">Tourism Entrepreneur, Social Activist</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider" style="margin-bottom: 80px;"></div>
+
+      <!-- Hierarchy 3 -->
+      <div class="hierarchy-level reveal">
+        <h2 class="hierarchy-title">Strategic Advisors</h2>
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-photo"><img src="Team/Parkash%20Singh%20Karki.jpeg" alt="Hon. Prakash Singh Karki">
+            </div>
+            <div class="team-name">Hon. Prakash Singh Karki</div>
+            <div class="team-role">Advisor</div>
+            <div class="team-desc">MP, Tourism Entrepreneur, Social Activist</div>
+          </div>
+          <div class="team-card">
+            <div class="team-photo"><img src="Team/Mingma%20Tenzi%20Sherpa.jpeg" alt="Mingma Tenzi Sherpa">
+            </div>
+            <div class="team-name">Mingma Tenzi Sherpa</div>
+            <div class="team-role">Advisor</div>
+            <div class="team-desc">Tourism Entrepreneur, Mountain Climbing Leader</div>
+          </div>
+          <div class="team-card">
+            <div class="team-photo"><img src="Team/Kamal%20Rai.jpeg" alt="Kamal Rai"></div>
+            <div class="team-name">Kamal Rai</div>
+            <div class="team-role">Advisor</div>
+            <div class="team-desc">Senior Choreographer</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider" style="margin-bottom: 80px;"></div>
+
+      <!-- Hierarchy 4 -->
+      <div class="hierarchy-level reveal">
+        <h2 class="hierarchy-title">Management</h2>
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-photo"><img src="Team/Benup-Raj-Khatri.jpg" alt="Benup Raj Khatri"></div>
+            <div class="team-name">Benup Raj Khatri</div>
+            <div class="team-role">Program Director</div>
+            <div class="team-desc">Driving global communications and outreach.</div>
+          </div>
+          <div class="team-card">
+            <div class="team-photo"><img src="Team/Sesemi%20Limbu.jpeg" alt="Sesemi Limbu"></div>
+            <div class="team-name">Sesemi Limbu</div>
+            <div class="team-role">Public Relations Manager</div>
+            <div class="team-desc">Driving global communications and outreach.</div>
+          </div>
+          <div class="team-card">
+            <div class="team-photo"><img src="Team/Birendra-Koirala.png" alt="Program Coordinator"></div>
+            <div class="team-name">Birendra Koirala</div>
+            <div class="team-role">Program Coordinator</div>
+            <div class="team-desc">Driving global communications and outreach.</div>
+          </div>
+          <div class="team-card">
+            <div class="team-photo"><img src="Team/Pramod-Pokhrel.png" alt="Digital Promotion Head"></div>
+            <div class="team-name">Pramod Pokhrel</div>
+            <div class="team-role">Digital Promotion Head</div>
+            <div class="team-desc">Driving global communications and outreach.</div>
+          </div>
+          <div class="team-card">
+            <div class="team-photo"><img src="Team/Gyanendra-Karki.jpg" alt="Gyanendra Karki"></div>
+            <div class="team-name">Gyanendra Karki</div>
+            <div class="team-role">Media and Publicity Director</div>
+            <div class="team-desc">Media and Outreach</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="AMS" class="footer-logo-img">
+          <div class="footer-name">AMS Global Himalaya Foundation</div>
+          <p class="footer-about">Uniting the world through cultural diplomacy and sustainable mountain development from
+            the heart of the Himalayas.</p>
+        </div>
+        <div class="footer-links">
+          <h4>The Foundation</h4>
+          <ul>
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="index.html#heritage">Our Heritage</a></li>
+            <li><a href="index.html#initiatives">Pillars</a></li>
+            <li><a href="event.html">Global Event</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Global Reach</h4>
+          <ul>
+            <li><a href="#">Kathmandu, Nepal</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Connect</h4>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/profile.php?id=100089523623571" aria-label="Facebook"><svg width="18"
+                height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg></a>
+          </div>
+          <p class="footer-tagline">"Save Himalayas for Sustainable Tourism"</p>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <div class="footer-nepal"> Designed and Developed by <a href="https://codeforcore.com/">Code for Core
+            Innovation</a></div>
+        <div class="footer-copyright">&copy; 2026 AMS Global Himalaya Foundation. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
