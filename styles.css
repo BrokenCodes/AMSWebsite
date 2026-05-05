@@ -349,6 +349,7 @@ a:hover { color: var(--green); }
    ============================================ */
 .about {
   margin-bottom: 70px;
+margin-top: 70px;
  /*  padding: var(--section-pad) 0; */
   background: var(--white);
   position: relative;
